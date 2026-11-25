@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Rehman Shakir | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      margin-bottom: 1rem;
+      background-color: var(--card);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 1.05rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .bio {
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto 1.5rem auto;
+      text-align: center;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .contact-links a {
+      text-decoration: none;
+      color: var(--text);
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .contact-links a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .skill-badge {
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      color: var(--accent);
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .project-card {
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+    }
+
+    .project-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.35rem;
+      color: var(--text);
+    }
+
+    .project-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.65rem;
+      }
+      .avatar {
+        width: 110px;
+        height: 110px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Make sure you upload an image named avatar.jpg to your repo -->
+      <img src="avatar.jpg" alt="Abdul Rehman Shakir" class="avatar" />
+      <h1>Abdul Rehman Shakir</h1>
+      <!-- EDIT: Update your exact degree and current semester -->
+      <p class="subtitle">BS Information Security • 3rd Semester</p>
+
+      <!-- EDIT: Bio is currently 102 words (meets the 80-150 word requirement) -->
+      <p class="bio">
+        I am a dedicated Computer Science student with a strong interest in computer networking, Linux system administration, and software development. Throughout my degree, I have focused on building practical technical skills through hands-on laboratory work, packet analysis, and version-controlled coding projects. I enjoy troubleshooting complex network configurations, automating routine system tasks with Python, and exploring how secure systems are designed and maintained. Currently, I am sharpening my command-line proficiency and collaborative development workflows using Git and GitHub while working toward a career in network engineering and cybersecurity.
+      </p>
+
+      <!-- EDIT: Replace LinkedIn and Email with your real professional links (no phone or home address) -->
+      <div class="contact-links">
+        <a href="https://github.com/shakir145" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:shakir145@example.com">Email Me</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <!-- EDIT: Keep only the skills you can actually use -->
+      <div class="skills-grid">
+        <span class="skill-badge">Linux</span>
+        <span class="skill-badge">Git &amp; GitHub</span>
+        <span class="skill-badge">Wireshark</span>
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">HTML &amp; CSS</span>
+        <span class="skill-badge">Bash Scripting</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Course Projects &amp; Labs</h2>
+      <div class="projects-grid">
+        <!-- EDIT: Replace these 3 with your actual course labs/projects (keep descriptions to 1 line) -->
+        <div class="project-card">
+          <h3>Lab 1: Network Packet Analysis with Wireshark</h3>
+          <p>Captured and inspected live TCP, DNS, and HTTP traffic to diagnose network latency and protocol behavior.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Lab 2: Linux File Permissions &amp; Bash Automation</h3>
+          <p>Built a shell script to automate daily directory backups and enforce user access controls on Ubuntu.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Project 3: Personal Portfolio on GitHub Pages</h3>
+          <p>Designed and deployed a responsive static website using HTML, CSS, Git version control, and GitHub Pages.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Abdul Rehman Shakir • Minimal Portfolio Template licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT License</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>
